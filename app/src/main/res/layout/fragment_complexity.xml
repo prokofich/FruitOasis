@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.ComplexityLevelFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/e"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#7b04af"
+        android:gravity="center"
+        android:id="@+id/id_comp_tv_title"
+        android:text="select difficulty level:"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/white"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="-easy-"
+        android:fontFamily="@font/baloo"
+        android:textSize="50sp"
+        style="@style/ButtonMenuStyle"
+        android:id="@+id/id_comp_button_easy"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_tv_title"
+        app:layout_constraintBottom_toTopOf="@id/id_comp_button_middle"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6 seconds to remember all the fruits"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/id_comp_button_easy"
+        app:layout_constraintStart_toStartOf="@id/id_comp_button_easy"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_button_easy"
+        app:layout_constraintWidth_percent="0.9"
+        android:id="@+id/id_comp_tv_easy"
+        android:background="@drawable/btr"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHeight_percent="0.04"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="-middle-"
+        android:fontFamily="@font/baloo"
+        android:textSize="50sp"
+        style="@style/ButtonMenuStyle"
+        android:id="@+id/id_comp_button_middle"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_tv_title"
+        app:layout_constraintBottom_toTopOf="@id/id_comp_button_back"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6 seconds to remember all the fruits"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/id_comp_button_middle"
+        app:layout_constraintStart_toStartOf="@id/id_comp_button_middle"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_button_middle"
+        app:layout_constraintWidth_percent="0.9"
+        android:id="@+id/id_comp_tv_middle"
+        android:background="@drawable/btr"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHeight_percent="0.04"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="-hard-"
+        android:fontFamily="@font/baloo"
+        android:textSize="50sp"
+        style="@style/ButtonMenuStyle"
+        android:id="@+id/id_comp_button_hard"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_button_middle"
+        app:layout_constraintBottom_toTopOf="@id/id_comp_button_back"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6 seconds to remember all the fruits"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/id_comp_button_hard"
+        app:layout_constraintStart_toStartOf="@id/id_comp_button_hard"
+        app:layout_constraintTop_toBottomOf="@id/id_comp_button_hard"
+        app:layout_constraintWidth_percent="0.9"
+        android:id="@+id/id_comp_tv_hard"
+        android:background="@drawable/btr"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHeight_percent="0.04"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/ButtonMenuStyle"
+        android:id="@+id/id_comp_button_back"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="back"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.MenuFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/e" />
+
+    <ImageView
+        android:id="@+id/id_menu_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/b"
+        android:text="Orchard Oasis"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_menu_button_play"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        style="@style/ButtonMenuStyle"
+        android:fontFamily="@font/baloo"
+        android:text="play"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/id_menu_button_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_menu_tv_title"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_menu_button_rules"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        style="@style/ButtonMenuStyle"
+        android:fontFamily="@font/baloo"
+        android:text="rules of the game"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_menu_button_play"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_menu_button_exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        style="@style/ButtonMenuStyle"
+        android:fontFamily="@font/baloo"
+        android:text="exit"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

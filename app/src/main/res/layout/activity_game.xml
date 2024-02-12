@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_game"
+    android:windowSoftInputMode="adjustPan|adjustResize|stateHidden"
+    tools:context=".view.activity.GameActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:id="@+id/id_nav_host"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph = "@navigation/nav_host"
+        app:defaultNavHost = "true"/>
+
+</FrameLayout>
